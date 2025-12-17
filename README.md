@@ -1,1 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paliwa Fams</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="famscss.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header id="beranda">
+        <div class="logo">PALIWAFAMS</div>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#kisah">Kisah Kami</a></li>
+                <li><a href="#profil">Profil Keluarga</a></li>
+                <li><a href="#album">Album Kenangan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section">
+        <div class="hero-image" style="background-image: url('background.jpeg');">
+            <div class="hero-content">
+                <h1>Jejak Kasih Tak Tergantikan</h1>
+                <p>Dua Pasang Hati, Satu Ikatan Abadi.</p>
+                <a href="#preview-memori" class="btn">Telusuri Kisah Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BERANDA HIGHLIGHT ===== -->
+<section class="beranda-section container">
+    <div class="beranda-grid">
+
+        <div class="beranda-item">
+            <h3>Kebersamaan</h3>
+            <p>
+                Kami tumbuh dalam tawa, cerita sederhana,
+                dan kebiasaan kecil yang bermakna.
+            </p>
+        </div>
+
+        <div class="beranda-item">
+            <h3>Kasih Sayang</h3>
+            <p>
+                Setiap hari adalah pengingat bahwa cinta
+                adalah fondasi dari sebuah keluarga.
+            </p>
+        </div>
+
+        <div class="beranda-item">
+            <h3>Kenangan</h3>
+            <p>
+                Momen kecil hari ini akan menjadi
+                cerita indah di masa depan.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== BERANDA STAT ===== -->
+<section class="stat-section">
+    <div class="stat-container">
+
+        <div class="stat-item">
+            <h2>6</h2>
+            <span>Bulan Bersama</span>
+        </div>
+
+        <div class="stat-item">
+            <h2>1000+</h2>
+            <span>Momen Tertawa</span>
+        </div>
+
+        <div class="stat-item">
+            <h2>∞</h2>
+            <span>Kasih Tak Terbatas</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== BERANDA QUOTE ===== -->
+<section class="quote-section container">
+    <p>
+        “Keluarga bukan tentang memiliki segalanya,
+        tetapi tentang saling menguatkan
+        dalam setiap keadaan.”
+    </p>
+</section>
+
+    <!-- ===== PREVIEW MEMORI ===== -->
+    <section id="preview-memori" class="container">
+        <h2>Sekilas Kenangan</h2>
+
+        <div class="memori-grid">
+            <div class="memori-card">
+                <img src="foto7.jpeg" alt="Liburan Alam">
+                <h3>Liburan Alam</h3>
+                <p>Kedamaian di tepi danau.</p>
+            </div>
+
+            <div class="memori-card">
+                <img src="foto8.jpeg" alt="Memasak Bersama">
+                <h3>Memasak Bersama</h3>
+                <p>Dapur penuh tawa dan kreasi.</p>
+            </div>
+
+            <div class="memori-card">
+                <img src="foto9.jpeg" alt="Wigara Bermain">
+                <h3>Keceriaan Wigara</h3>
+                <p>Petualangan di taman.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KISAH KAMI ===== -->
+<section id="kisah" class="container kisah-section">
+    <div class="kisah-text">
+        <h2>Kisah Kami</h2>
+        <p>
+            Keluarga kami adalah rumah bagi cinta, tawa, dan kebersamaan.
+            Dari langkah kecil hingga perjalanan panjang, setiap momen
+            terukir sebagai jejak kasih yang tak tergantikan.
+        </p>
+        <p>
+            Kami percaya bahwa keluarga bukan tentang kesempurnaan,
+            tetapi tentang saling menguatkan dalam setiap keadaan.
+        </p>
+    </div>
+</section>
+
+<!-- ===== PROFIL KELUARGA ===== -->
+<section id="profil" class="container profil-section">
+    <h2>Profil Keluarga</h2>
+
+    <div class="profil-grid">
+        <div class="profil-card">
+            <img src="Foto_Ayah.jpeg" alt="Ayah">
+            <h3>Ragaz</h3>
+            <span>Ayah</span>
+        </div>
+
+        <div class="profil-card">
+            <img src="Foto_Papa.jpeg" alt="Papa">
+            <h3>Raka</h3>
+            <span>Papa</span>
+        </div>
+
+        <div class="profil-card">
+            <img src="Foto_Anak.jpeg" alt="Anak">
+            <h3>Wigara</h3>
+            <span>Anak</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA ALBUM ===== -->
+<section id="album" class="album-section">
+    <div class="album-content">
+        <h2>Album Kenangan</h2>
+        <p>Kumpulan momen sederhana yang penuh makna.</p>
+        <a href="#album-galeri" class="btn">Lihat Album</a>
+    </div>
+</section>
+
+<!-- ================================
+     ALBUM GALERI
+================================= -->
+<section id="album-galeri" class="container album-galeri">
+    <h2>Album Kenangan</h2>
+    <p class="album-desc">
+        Setiap foto adalah cerita, setiap cerita adalah kenangan.
+    </p>
+
+    <div class="album-grid">
+        <div class="album-item">
+            <img src="1.jpeg" alt="Liburan Keluarga">
+            <span>Liburan Bersama</span>
+        </div>
+
+        <div class="album-item">
+            <img src="2.jpeg" alt="Momen Rumah">
+            <span>Kehangatan Rumah</span>
+        </div>
+
+        <div class="album-item">
+            <img src="3.jpeg" alt="Makan Bersama">
+            <span>Makan Bersama</span>
+        </div>
+
+        <div class="album-item">
+            <img src="4.jpeg" alt="Ulang Tahun">
+            <span>Hari Spesial</span>
+        </div>
+
+        <div class="album-item">
+            <img src="5.jpeg" alt="Kenangan Anak">
+            <span>Keceriaan Anak</span>
+        </div>
+
+        <div class="album-item">
+            <img src="6.jpeg" alt="Foto Keluarga">
+            <span>Potret Keluarga</span>
+        </div>
+    </div>
+</section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2025 Keluarga Raka, Ragaz, Wigara. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <!-- JS (WAJIB DI BAWAH) -->
+    <script src="famsjs.js"></script>
+</body>
+</html>
 
