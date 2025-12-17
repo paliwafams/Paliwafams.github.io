@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".memori-card");
 
+    
     const observer = new IntersectionObserver(
         (entries, observer) => {
             entries.forEach(entry => {
