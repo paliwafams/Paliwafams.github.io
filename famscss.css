@@ -309,6 +309,7 @@ nav ul li a:hover {
     bottom: 0;
     width: 100%;
     padding: 12px;
+    text-align: center;
     background: linear-gradient(
         transparent,
         rgba(0,0,0,0.6)
