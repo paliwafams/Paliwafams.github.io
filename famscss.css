@@ -306,10 +306,12 @@ nav ul li a:hover {
 /* Overlay teks */
 .album-item span {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 12px;
-    text-align: center;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;   /* bawah */
+    justify-content: center; /* tengah */
+    padding-bottom: 15px;
+
     background: linear-gradient(
         transparent,
         rgba(0,0,0,0.6)
@@ -317,6 +319,7 @@ nav ul li a:hover {
     color: #FFFFFF;
     font-size: 0.95em;
 }
+
 
 
 /* ================================
