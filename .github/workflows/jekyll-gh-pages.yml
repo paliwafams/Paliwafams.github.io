@@ -227,3 +227,448 @@
 </body>
 </html>
 
+/* ================================
+   RESET DASAR
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   GLOBAL STYLE
+================================ */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #FDFDFB; /* Putih hangat */
+    color: #333333;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #4F6F5E; /* Hijau gelap */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+/* ================================
+   HEADER & NAVBAR
+================================ */
+header {
+    background-color: #FFFFFF;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E8D9A8; /* Gold lembut */
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #D4AF37; /* Gold utama */
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4F6F5E;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #D4AF37;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+.hero-section {
+    height: 70vh;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(0.75);
+}
+
+.hero-content {
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.hero-content p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    color: #F1F1F1;
+}
+
+/* ================================
+   BUTTON
+================================ */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #8FAF9F; /* Sage */
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4F6F5E;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   BERANDA HIGHLIGHT
+================================ */
+.beranda-section {
+    text-align: center;
+}
+
+.beranda-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.beranda-item {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #E8D9A8;
+    max-width: 300px;
+    transition: all 0.4s ease;
+}
+
+.beranda-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.25);
+}
+
+.beranda-item h3 {
+    margin-bottom: 10px;
+    color: #4F6F5E;
+}
+
+.beranda-item p {
+    color: #666666;
+    font-size: 0.95em;
+}
+
+/* ================================
+   BERANDA STAT
+================================ */
+.stat-section {
+    background-color: #8FAF9F;
+    padding: 70px 10%;
+    margin-top: 80px;
+}
+
+.stat-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 3em;
+    color: #FFFFFF;
+}
+
+.stat-item span {
+    color: #FDFDFB;
+    font-size: 0.95em;
+}
+
+/* ================================
+   BERANDA QUOTE
+================================ */
+.quote-section {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.quote-section p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    color: #4F6F5E;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* ================================
+   PREVIEW MEMORI
+================================ */
+#preview-memori {
+    text-align: center;
+}
+
+#preview-memori h2 {
+    font-size: 2.3em;
+    margin-bottom: 40px;
+}
+
+.memori-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* CARD */
+.memori-card {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #E8D9A8;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+
+    /* Animasi awal (JS) */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.memori-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.25);
+}
+
+.memori-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.memori-card h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: #4F6F5E;
+}
+
+.memori-card p {
+    font-size: 0.95em;
+    color: #666666;
+}
+
+/* ================================
+   ALBUM GALERI
+================================ */
+.album-galeri {
+    text-align: center;
+}
+
+.album-galeri h2 {
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+.album-desc {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1em;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.album-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease;
+}
+
+.album-item:hover {
+    transform: scale(1.03);
+}
+
+.album-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay teks */
+.album-item span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.6)
+    );
+    color: #FFFFFF;
+    font-size: 0.95em;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    background-color: #4F6F5E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 70px;
+    font-size: 0.9em;
+}
+
+/* ================================
+   RESPONSIVE (MOBILE)
+================================ */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .memori-grid {
+        flex-direction: column;
+    }
+}
+
+/* ================================
+   KISAH KAMI
+================================ */
+.kisah-section {
+    text-align: center;
+}
+
+.kisah-text {
+    max-width: 700px;
+    margin: auto;
+}
+
+.kisah-text p {
+    margin-top: 15px;
+    color: #555555;
+    font-size: 1.05em;
+}
+
+/* ================================
+   PROFIL KELUARGA
+================================ */
+.profil-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profil-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.profil-card {
+    text-align: center;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #E8D9A8;
+    width: 220px;
+    transition: all 0.4s ease;
+}
+
+.profil-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.25);
+}
+
+.profil-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profil-card h3 {
+    margin-bottom: 5px;
+}
+
+.profil-card span {
+    font-size: 0.9em;
+    color: #8FAF9F;
+}
+
+/* ================================
+   ALBUM CTA
+================================ */
+.album-section {
+    background: linear-gradient(
+        rgba(79, 111, 94, 0.85),
+        rgba(79, 111, 94, 0.85)
+    ),
+    url("URL_BACKGROUND_ALBUM");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.album-content h2 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.album-content p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    color: #F1F1F1;
+}
